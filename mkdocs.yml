@@ -1,0 +1,9 @@
+site_name: rtmix Documentation
+site_url: https://lucher777.github.io/rtmix/
+repo_url: https://github.com/lucher777/rtmix
+theme:
+  name: material
+nav:
+  - Overview: index.md
+  - Tutorial: tutorial.md
+  - API Reference: api.md

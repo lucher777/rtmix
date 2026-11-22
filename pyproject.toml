@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rtmix"
+version = "0.1.0"
+description = "Dual-Tail Process-Data Mixture IRT (DT-MixIRT) for disentangling rapid guessing, careful slowness, and AI-assisted copying"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Kang Liu", email = "peacekange@gmail.com" },
+]
+keywords = [
+    "item response theory",
+    "process data",
+    "response time",
+    "rapid guessing",
+    "AI-assisted cheating",
+    "mixture IRT",
+    "psychometrics",
+    "PyTorch",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Education :: Testing",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+gpu = ["torch>=2.0"]
+docs = ["mkdocs>=1.5", "mkdocs-material>=9.0"]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/lucher777/rtmix"
+Documentation = "https://lucher777.github.io/rtmix/"
+Repository = "https://github.com/lucher777/rtmix"
+Issues = "https://github.com/lucher777/rtmix/issues"
+
+[project.scripts]
+rtmix = "rtmix.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"rtmix.data" = ["*.npz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

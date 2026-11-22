@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "rtmix: Dual-Tail Process-Data Mixture IRT for Disentangling Rapid Guessing, Careful Slowness, and AI-Assisted Copying"
+message: "If you use rtmix in your research or operational testing audits, please cite this software."
+type: software
+authors:
+  - given-names: Kang
+    family-names: Liu
+    email: peacekange@gmail.com
+    orcid: "https://orcid.org/0009-0004-3214-505X"
+    affiliation: "Faculty of Education, Shandong Normal University, Jinan, China"
+repository-code: "https://github.com/lucher777/rtmix"
+url: "https://lucher777.github.io/rtmix/"
+license: MIT
+version: "0.1.0"
+date-released: "2026-11-19"
+keywords:
+  - item response theory
+  - process data
+  - response times
+  - rapid guessing
+  - AI-assisted cheating
+  - mixture modeling
