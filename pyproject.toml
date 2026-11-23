@@ -45,7 +45,6 @@ dev = ["pytest>=7.4", "ruff>=0.4"]
 
 [project.urls]
 Homepage = "https://github.com/lucher777/rtmix"
-Documentation = "https://lucher777.github.io/rtmix/"
 Repository = "https://github.com/lucher777/rtmix"
 Issues = "https://github.com/lucher777/rtmix/issues"
 

@@ -251,7 +251,7 @@ def fit_bivariate_mixture_ablation(
 
     Removes all information from the edit/action-entropy channel by passing a
     degenerate zero-variance constant stream, isolating the exact marginal gain
-    contributed by trivariate keystroke/action entropy (Theorem 1).
+    contributed by trivariate keystroke/action entropy (Proposition 1 in the supplement).
 
     Parameters
     ----------

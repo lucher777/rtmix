@@ -667,7 +667,7 @@ def _fit_numpy_backend(
             break
         prev_ll = total_ll
 
-    # Final exact person-level inference (Theorem 3: LRT + 95% profile CIs)
+    # Final person-level inference (Proposition 3: LRT + 95% profile CIs)
     (
         theta,
         tau,
@@ -1398,7 +1398,7 @@ def _fit_torch_backend(
                 break
             prev_ll = total_ll
 
-        # Theorem 3: GPU-parallel boundary-corrected LRT & 95% profile CIs
+        # Proposition 3: GPU-parallel boundary-corrected LRT & 95% profile CIs
         th_n0, ta_n0, nu_n0, _, _, _, obj_clean, _, _ = _optimize_persons_constrained_torch(
             Y_t, L_t, H_t, mask_t, n_obs_i, theta_t, tau_t, nu_t, pi_rg_t, pi_ai_t,
             a_t, b_t, c_t, beta_t, st_t, gamma_t, sh_t, reg_p,
